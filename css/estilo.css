@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media all and (max-width: 1024px) {
+    
+    .header__nav--nav {
+        justify-content: center;
+        padding-top: 20px;
+        padding-right: 30px;
+        font-family: 'Montserrat', sans-serif ; 
+       word-spacing: 20px;
+       font-size: 8pt; 
+    }
+    .header__nav--logo {
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+
+}
+
+
+header {
+    font-family:'Montserrat', sans-serif;
+    background-image: url(../imagenes/imagn.jpg);
+    background-size:cover;
+}
+
+.header__nav--logo {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between ;
+    flex-direction: row;
+}
+
+
+.header__nav--nav {
+    flex-direction: row;
+    padding-top: 40px;
+    padding-right: 50px;
+    font-family: 'Montserrat', sans-serif ; 
+   word-spacing: 50px;
+   font-size: 13pt;
+  
+}
+
+.header__img {
+    
+    height: 650px;
+    text-align: center;
+    size: 300px;
+}
+
+#título {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 90pt;
+    color: white;
+    padding-top: 210px;
+    
+}
+
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 19px
+   }
+
+ 
+   .main__text1 {
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   }
+   .main1 {
+       padding: 70px;
+   }
+   .main2 {
+       padding: 70px;
+   }
+
+  
+   #titulo1 {
+       font-size: 20pt;
+       color: #00cccc;
+   }
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+h3 {
+    font-size: 50px;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav2 {
+    color: black;
+}
+.acciones {
+display: grid;
+grid-template-columns: repeat(3,1fr);
+margin: 10px;
+}
+.clientescon {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+   
+}
+.servicioscon {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 70px;
+}
+.mainservicio {
+    padding-top: 70px;
+}
+.equiposcon {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+footer {
+    background-color: #333333;
+    height: 200px;
+    color: white;
+   margin-top: 70px;
+}
+.nav2 {
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px;
+}
+
+.main1nos {
+    padding-top: 70px;
+}
+.main2nos {
+    padding-top: 70px;
+}
+.main3nos {
+    padding-top: 70px;
+}
+.main4nos {
+    padding-top: 70px;
+}
+

@@ -68,10 +68,17 @@ header {
 
 
 a {
+    transition-property: font-size;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: #ffffff;
     font-size: 19px
+   }
+   a:hover {
+       color: red;
+
    }
 
  
@@ -119,6 +126,15 @@ margin: 10px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     padding-top: 70px;
+}
+.socio1 {
+    transform: translate(-300px, 50px);
+}
+.socio2 {
+    transform:translate(0px, -60px)
+}
+.socio3 {
+    transform: translate(350px, -180px);
 }
 .mainservicio {
     padding-top: 70px;

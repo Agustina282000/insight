@@ -4,23 +4,22 @@
     box-sizing: border-box;
 }
 
-@media all and (max-width: 1024px) {
+
+
+@media (min-width: 576px) { 
+    .main1 {
+        padding: 40px;
+    }
+        
+    .main2 {
+        padding: 40px;
+    }
+           
     
-    .header__nav--nav {
-        justify-content: center;
-        padding-top: 20px;
-        padding-right: 30px;
-        font-family: 'Montserrat', sans-serif ; 
-       word-spacing: 20px;
-       font-size: 8pt; 
-    }
-    .header__nav--logo {
-        margin-top: 30px;
-        margin-left: 50px;
-    }
+ }
 
-}
-
+ 
+ 
 
 header {
     font-family:'Montserrat', sans-serif;

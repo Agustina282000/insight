@@ -6,13 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insight</title>
     <link rel="shortcut icon" href="../imagenes/shorticon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <enlace href="https: //fonts.googleapis.com/css2? familia= Montserrat:peso@700 & display=swap" rel="stylesheet"></enlace>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../scss/style.css">
    </head>
 
 <body >
@@ -46,125 +44,85 @@
        
     </header>
 
-    <main class="container">
+    <main>
 
-        <section class= main__text1>
+        <section class= sectionindex1>
 
-         <div class="main1">
+         <div class="sectionindex1_texto">
             
-            <h3>SOBRE NOSOTROS</h3>
+            <h3>Sobre nosotros</h3>
             <br>
-            <p> Somos una empresa de desarrollo de software que ayuda a nuestro clientes a tener éxito con acciones y metodologías de vanguardia </p>
-         </div>  
-         <div class="main2">
-            <img src="../imagenes/imagen_index_1.jpeg" class="img-fluid" alt="gente trabajando" width= "600px">
-         </div>
-         
-         
+            <p> Somos una empresa de desarrollo de software que ayuda a nuestros clientes a tener éxito con acciones y metodologías de vanguardia </p>
+            <a class="botonleermas" href="">Leer mas</a>
+      </div> 
+         <div class="sectionindex1_imagen">
+            <img src="../imagenes/imagen2.jpg"
+             class="img-fluid" alt="gente trabajando" width= "600px">
+         </div> 
 
         </section>
-        <section>
-       <div>
+        
+        <section class="sectionindex2">
+       <div class="sectionindex2_texto">
             
-            <h3>¿QUÉ HACEMOS?</h3>
+            <h3>Servicios</h3>
             <br>
             <p>Combinamos ingeniería, diseño e innovación con un acercamiento a nuestros clientes con valor agregado para reinventar el negocio. Nos motivan los desafíos.  </p>
             <a href="">Leer mas</a>
             
          </div>
 
-         <div class= acciones>
-            <div>
+         <div class= "sectionindex2_cards">
+            <div class="sectionindex2_cards-1">
                <h5>User experience</h5>              
             </div>
    
-            <div>
+            <div class="sectionindex2_cards-2">
                <h5>Blockchain</h5>   
             </div>
    
-            <div>
+            <div class="sectionindex2_cards-3">
                <h5>Graphics & Media Engines</h5>
             </div>
 
-            <div>
+            <div class="sectionindex2_cards-4">
                <h5>Back End</h5>
             </div>
 
-            <div>
+            <div class="sectionindex2_cards-5">
                <h5>Data Science</h5>
             </div>
    
            
          </div>
-            <br>
+            
          </section>
 
-        <section>
-            <h3>NUESTROS CLIENTES</h3>
+        <section class="sectionindex3">
+           <div class="sectionindex3-texto">
+            <h3>Clientes</h3>
             <br>
-     
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-               <div class="carousel-indicators">
-                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-               </div>
-               <div class="carousel-inner">
-                 <div class="carousel-item active">
-                   <img src="https://picsum.photos/200" class="d-block w-100" alt="cliente3">
-                   <div class="carousel-caption d-none d-md-block">
-                     <h5>Cliente 1</h5>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cumque exercitationem maxime </p>
-                   </div>
-                 </div>
-                 <div class="carousel-item">
-                   <img src="https://picsum.photos/200" class="d-block w-100" alt="cliente1">
-                   <div class="carousel-caption d-none d-md-block">
-                     <h5>Cliente 2</h5>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cumque exercitationem maxime </p>
-                   </div>
-                 </div>
-                 <div class="carousel-item">
-                   <img src="https://picsum.photos/200" class="d-block w-100" alt="cliente2">
-                   <div class="carousel-caption d-none d-md-block">
-                     <h5>Cliente 3</h5>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cumque exercitationem maxime </p>
-                   </div>
-                 </div>
-               </div>
-               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                 <span class="visually-hidden">Previous</span>
-               </button>
-               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                 <span class="visually-hidden">Next</span>
-               </button>
-             </div>
-   
+            <p>Algunos de nuestros clientes</p>
+           </div>
 
-    <footer class="containerfluid">
+           <div class="imagenes">
 
-    
-      <nav class="nav2">
-          <a href="../index.html">INICIO</a>
-          <a href="./nosotros.html">NOSOTROS</a>
-          <a href="./servicios.html">SERVICIOS</a>
-          <a href="./equipos.html">EQUIPOS</a>
-          <a href="./contacto.html">CONTACTO</a>  
-      </nav>
-   
-<div>
- <p>Todos lo derechos reservados</p>
-</div>
-    
-   <div>
-      <img src="./diseño grafico de marca/img/87390.png"width= "25" alt="icono insta">
-      <img src="./diseño grafico de marca/img/linkedin.png" width= "25"alt="icono linkedin">
-      <img src="./diseño grafico de marca/img/twitter.png"width= "25" alt="icono twitter">
-   </div>
+              <img src="" alt="cliente1">
+              <img src="" alt="cliente2">
+              <img src="" alt="cliente3">
+              <img src="" alt="cliente4">
+              <img src="" alt="cliente5">
+              <img src="" alt="cliente6">
+
+           </div>             
+        </section>
+
+    <footer>
+     <div>
+
+     </div>
         
-</footer>
+    </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
        

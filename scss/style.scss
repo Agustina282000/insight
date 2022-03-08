@@ -1,0 +1,221 @@
+@import "estructura" ;
+@import "colores";
+@import "tipografia";
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#título {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 90pt;
+    color: white;
+    padding-top: 210px;
+    
+}
+
+a {
+    transition-property: font-size;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 19px
+   }
+   a:hover {
+    color: #F1524F;
+
+}
+
+main {
+    padding: 20px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif, 200;
+    text-align: left;
+}
+
+h3 {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif, 500;
+    text-align: left;
+}
+
+//........Header........//
+
+header {
+    font-family:'Montserrat', sans-serif;
+    background-image: url(../imagenes/imagn.jpg);
+    .header__img {
+    
+        height: 650px;
+        text-align: center;
+        size: 300px;
+    }
+    .header__nav {
+        display: flex;
+        justify-content: space-between ;
+        .header__nav--logo {
+            margin-top: 30px;
+            margin-left: 50px;
+        }
+        .header__nav--nav {
+            flex-direction: row;
+            padding-top: 40px;
+            padding-right: 50px;
+            font-family: 'Montserrat', sans-serif ; 
+           word-spacing: 50px;
+           font-size: 13pt;
+          
+        }
+        flex-direction: row; }
+    background-size:cover;}
+
+//.........Inicio.........//
+ 
+.sectionindex1 {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    .sectionindex1_texto {
+        padding-top: 150px;
+        padding-left: 50px;
+        color: white;
+        .botonleermas {
+            padding: 5px;
+            border-radius: 1px;
+            box-shadow: 1px;
+
+        }
+    }
+    .sectionindex1_imagen {
+        padding: 70px;
+    }
+ }
+.sectionindex2 {
+    background-image: url(../imagenes/fondo-inicio.1.jpg);
+    background-size: cover;
+    height: 650px;
+    size: 300px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    .sectionindex2_texto {
+        padding-top: 250px;
+        padding-left: 50px;
+        color:white;
+    }
+    .sectionindex2_cards {
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        
+        .sectionindex2_cards-1 {
+        background-color: rgba(255, 255, 255, 0.377);
+        padding: 50px;
+        box-sizing: 100px;
+        }
+        .sectionindex2_cards-2 {
+        background-color: rgba(255, 255, 255, 0.377);
+        padding: 50px;
+        box-sizing: 100px;
+        }
+        .sectionindex2_cards-3 {
+        background-color: rgba(255, 255, 255, 0.377);
+        padding: 50px;
+        box-sizing: 100px;
+        }
+        .sectionindex2_cards-4 {
+        background-color: rgba(255, 255, 255, 0.377);
+        padding: 50px;
+        box-sizing: 100px;
+        }
+        .sectionindex2_cards-5 {
+        background-color: rgba(255, 255, 255, 0.377);
+        padding: 50px;
+        box-sizing: 100px;
+        }
+        .sectionindex2_cards-6 {
+        background-color: rgba(255, 255, 255, 0.377);
+        padding: 50px;
+        box-sizing: 100px;
+        }
+    }
+    
+}
+
+//.........Nosotros.......//
+
+.main1nos {
+    padding-top: 70px;
+}
+.main2nos {
+    padding-top: 70px;
+}
+.main3nos {
+    padding-top: 70px;
+}
+.main4nos {
+    padding-top: 70px;
+    .socio1 {
+        transform: translate(-300px, 50px);
+    }
+    .socio2 {
+        transform:translate(0px, -60px)
+    }
+    .socio3 {
+        transform: translate(350px, -180px);
+    }
+      
+}
+
+//.......Equipos......//
+
+
+
+
+//......Footer......//
+
+footer {
+    background-color: #333333;
+    height: 200px;
+    color: white;
+   margin-top: 70px;
+   .nav2 {
+       color: black;
+       font-family: 'Montserrat', sans-serif;
+       padding: 30px;
+   }
+}
+
+
+.clientescon {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+   
+}
+.servicioscon {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 70px;
+}
+
+.mainservicio {
+    padding-top: 70px;
+}
+.equiposcon {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+

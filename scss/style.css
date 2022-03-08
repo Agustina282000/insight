@@ -1,0 +1,197 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#título {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 90pt;
+  color: white;
+  padding-top: 210px;
+}
+
+a {
+  -webkit-transition-property: font-size;
+  transition-property: font-size;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 19px;
+}
+
+a:hover {
+  color: #F1524F;
+}
+
+main {
+  padding: 20px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif, 200;
+  text-align: left;
+}
+
+h3 {
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif, 500;
+  text-align: left;
+}
+
+header {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(../imagenes/imagn.jpg);
+  background-size: cover;
+}
+
+header .header__img {
+  height: 650px;
+  text-align: center;
+  size: 300px;
+}
+
+header .header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header .header__nav .header__nav--logo {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+header .header__nav .header__nav--nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 40px;
+  padding-right: 50px;
+  font-family: 'Montserrat', sans-serif;
+  word-spacing: 50px;
+  font-size: 13pt;
+}
+
+.sectionindex1 {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat (2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.sectionindex1 .sectionindex1_texto {
+  padding-top: 150px;
+  padding-left: 50px;
+  color: white;
+}
+
+.sectionindex1 .sectionindex1_texto .botonleermas {
+  padding: 5px;
+  border-radius: 1px;
+  -webkit-box-shadow: 1px;
+          box-shadow: 1px;
+}
+
+.sectionindex1 .sectionindex1_imagen {
+  padding: 70px;
+}
+
+.sectionindex2 {
+  background-image: url(../imagenes/fondo-inicio.1.jpg);
+  background-size: cover;
+  height: 650px;
+  size: 300px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.sectionindex2 .sectionindex2_texto {
+  padding-top: 250px;
+  padding-left: 50px;
+  color: white;
+}
+
+.main1nos {
+  padding-top: 70px;
+}
+
+.main2nos {
+  padding-top: 70px;
+}
+
+.main3nos {
+  padding-top: 70px;
+}
+
+.main4nos {
+  padding-top: 70px;
+}
+
+.main4nos .socio1 {
+  -webkit-transform: translate(-300px, 50px);
+          transform: translate(-300px, 50px);
+}
+
+.main4nos .socio2 {
+  -webkit-transform: translate(0px, -60px);
+          transform: translate(0px, -60px);
+}
+
+.main4nos .socio3 {
+  -webkit-transform: translate(350px, -180px);
+          transform: translate(350px, -180px);
+}
+
+footer {
+  background-color: #333333;
+  height: 200px;
+  color: white;
+  margin-top: 70px;
+}
+
+footer .nav2 {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  padding: 30px;
+}
+
+.clientescon {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.servicioscon {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 70px;
+}
+
+.mainservicio {
+  padding-top: 70px;
+}
+
+.equiposcon {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+/*# sourceMappingURL=style.css.map */

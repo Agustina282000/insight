@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/******Variables*****/
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,7 @@
 }
 
 #título {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   font-size: 90pt;
   color: white;
@@ -15,50 +16,36 @@
 }
 
 a {
-  -webkit-transition-property: font-size;
-  transition-property: font-size;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-decoration: none;
-  color: #ffffff;
+  color: white;
   font-size: 19px;
 }
 
-a:hover {
-  color: #F1524F;
-}
-
-main {
-  padding: 20px;
-}
-
 body {
-  font-family: 'Montserrat', sans-serif, 200;
+  font-family: "Montserrat", sans-serif, 200;
   text-align: left;
 }
 
 h3 {
   font-size: 50px;
-  font-family: 'Montserrat', sans-serif, 500;
+  font-family: "Montserrat", sans-serif, 500;
   text-align: left;
 }
 
 header {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-image: url(../imagenes/imagn.jpg);
   background-size: cover;
 }
 
-header .header__img {
+header .fondo-header {
   height: 650px;
   text-align: center;
   size: 300px;
 }
 
-header .header__nav {
+header .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,12 +58,12 @@ header .header__nav {
           flex-direction: row;
 }
 
-header .header__nav .header__nav--logo {
+header .nav .logo-nav {
   margin-top: 30px;
   margin-left: 50px;
 }
 
-header .header__nav .header__nav--nav {
+header .nav .nav-links {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -88,110 +75,371 @@ header .header__nav .header__nav--nav {
   font-size: 13pt;
 }
 
-.sectionindex1 {
+.sobre-nosotros {
   background-color: black;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat (2, 1fr);
-  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 
-.sectionindex1 .sectionindex1_texto {
+.sobre-nosotros .sobre-nosotros-texto {
   padding-top: 150px;
   padding-left: 50px;
   color: white;
 }
 
-.sectionindex1 .sectionindex1_texto .botonleermas {
-  padding: 5px;
-  border-radius: 1px;
-  -webkit-box-shadow: 1px;
-          box-shadow: 1px;
+.sobre-nosotros .sobre-nosotros-texto .parrafo-sobrenos {
+  padding-top: 2em;
+  padding-bottom: 0.5em;
 }
 
-.sectionindex1 .sectionindex1_imagen {
+.sobre-nosotros .sobre-nosotros-texto .botonleermas {
+  background-color: #F1524F;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 3px 3px 15px #333333;
+          box-shadow: 3px 3px 15px #333333;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+}
+
+.sobre-nosotros .sobre-nosotros-texto .botonleermas:hover {
+  background-color: white;
+  color: #F1524F;
+}
+
+.sobre-nosotros .sobre-nosotros-imagen {
   padding: 70px;
 }
 
-.sectionindex2 {
+.servicios-index {
   background-image: url(../imagenes/fondo-inicio.1.jpg);
   background-size: cover;
   height: 650px;
   size: 300px;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 
-.sectionindex2 .sectionindex2_texto {
+.servicios-index .servicios-index-texto {
   padding-top: 250px;
   padding-left: 50px;
   color: white;
 }
 
-.main1nos {
-  padding-top: 70px;
+.servicios-index .servicios-index-texto .parrafo-servicios {
+  padding-top: 2em;
+  padding-bottom: 0.5em;
 }
 
-.main2nos {
-  padding-top: 70px;
+.servicios-index .servicios-index-texto .botonleermas2 {
+  background-color: #F1524F;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 3px 3px 15px #333333;
+          box-shadow: 3px 3px 15px #333333;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
 }
 
-.main3nos {
-  padding-top: 70px;
+.servicios-index .servicios-index-texto .botonleermas2:hover {
+  background-color: white;
+  color: #F1524F;
 }
 
-.main4nos {
-  padding-top: 70px;
+.servicios-index .servicios-index-cards {
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  padding-right: 50px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
 }
 
-.main4nos .socio1 {
-  -webkit-transform: translate(-300px, 50px);
-          transform: translate(-300px, 50px);
+.servicios-index .servicios-index-cards .servicio-card1 {
+  background-color: rgba(255, 255, 255, 0.377);
+  padding: 5px;
+  -webkit-box-sizing: 10px;
+          box-sizing: 10px;
+  margin-top: 6em;
+  padding-top: 2em;
 }
 
-.main4nos .socio2 {
-  -webkit-transform: translate(0px, -60px);
-          transform: translate(0px, -60px);
+.servicios-index .servicios-index-cards .servicio-card2 {
+  background-color: rgba(255, 255, 255, 0.377);
+  padding: 10px;
+  -webkit-box-sizing: 20px;
+          box-sizing: 20px;
+  margin-top: 6em;
+  padding-top: 2em;
 }
 
-.main4nos .socio3 {
-  -webkit-transform: translate(350px, -180px);
-          transform: translate(350px, -180px);
+.servicios-index .servicios-index-cards .servicio-card3 {
+  background-color: rgba(255, 255, 255, 0.377);
+  padding: 10px;
+  -webkit-box-sizing: 20px;
+          box-sizing: 20px;
+  margin-top: 6em;
+  padding-top: 2em;
+}
+
+.servicios-index .servicios-index-cards .servicio-card4 {
+  background-color: rgba(255, 255, 255, 0.377);
+  padding: 10px;
+  -webkit-box-sizing: 20px;
+          box-sizing: 20px;
+  margin-bottom: 6em;
+  padding-top: 2em;
+}
+
+.servicios-index .servicios-index-cards .servicio-card5 {
+  background-color: rgba(255, 255, 255, 0.377);
+  padding: 10px;
+  -webkit-box-sizing: 20px;
+          box-sizing: 20px;
+  margin-bottom: 6em;
+  padding-top: 2em;
+}
+
+.servicios-index .servicios-index-cards .servicio-card6 {
+  background-color: rgba(255, 255, 255, 0.377);
+  padding: 10px;
+  -webkit-box-sizing: 20px;
+          box-sizing: 20px;
+  margin-bottom: 6em;
+  padding-top: 2em;
+}
+
+.clientes {
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.clientes .clientes-texto {
+  padding-top: 150px;
+  padding-left: 50px;
+  color: white;
+}
+
+.clientes .clientes-texto .botonleermas {
+  background-color: #F1524F;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 3px 3px 15px #333333;
+          box-shadow: 3px 3px 15px #333333;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+}
+
+.clientes .clientes-texto .botonleermas:hover {
+  background-color: white;
+  color: #F1524F;
+}
+
+.contactanos-index {
+  background-color: black;
+  color: white;
+  padding: 200px;
+}
+
+.contactanos-index .contactanos-texto {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.contactanos-index .boton-contactanos {
+  margin-left: 21em;
+  background-color: #F1524F;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 3px 3px 15px #333333;
+          box-shadow: 3px 3px 15px #333333;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+}
+
+.contactanos-index .boton-contactanos:hover {
+  background-color: white;
+  color: #F1524F;
+}
+
+.presentacion {
+  background-color: black;
+  color: white;
+  padding: 200px;
+}
+
+.porque-escogernos {
+  background-image: url(../imagenes/fondo.nosotros.1.jpg);
+  background-size: cover;
+  height: 650px;
+  size: 300px;
+  color: white;
+}
+
+.porque-escogernos .texto-porque {
+  padding: 230px;
+}
+
+.porque-escogernos .texto-porque .parrafo-porque {
+  padding-top: 2em;
+}
+
+.acciones {
+  padding: 200px;
+  background-color: black;
+  color: white;
+}
+
+.acciones .acciones-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+}
+
+.acciones .acciones-items .icono-foco {
+  color: #F1524F;
+}
+
+.acciones .acciones-items .icono-mano {
+  color: #F1524F;
+}
+
+.acciones .acciones-items .icono-persona {
+  color: #F1524F;
+}
+
+.servicios {
+  background-color: black;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+  padding: 4em;
+}
+
+.servicios .servicioclouds {
+  background-color: rgba(255, 255, 255, 0.377);
+  padding-top: 8em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 3em;
+}
+
+.servicios .servicioback {
+  background-color: rgba(255, 255, 255, 0.377);
+  padding-top: 8em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 3em;
+}
+
+.servicios .serviciograph {
+  background-color: rgba(255, 255, 255, 0.377);
+  padding-top: 8em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 3em;
+}
+
+.servicios .servicioblock {
+  background-color: rgba(255, 255, 255, 0.377);
+  padding-top: 8em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 3em;
+}
+
+.servicios .serviciomachine {
+  background-color: rgba(255, 255, 255, 0.377);
+  padding-top: 8em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 3em;
+}
+
+.servicios .servicioux {
+  background-color: rgba(255, 255, 255, 0.377);
+  padding-top: 8em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 3em;
+}
+
+.maingrupo {
+  background-color: black;
+}
+
+.maingrupo .que-son {
+  color: white;
+  padding: 200px;
+}
+
+.maingrupo .que-son .parrafo-que-son {
+  padding-top: 2em;
+}
+
+.maingrupo .porque-contamos {
+  background-color: rgba(255, 255, 255, 0.377);
+  color: white;
+  padding: 200px;
+}
+
+.maingrupo .porque-contamos .porque-contamos-lista {
+  padding-top: 2em;
+}
+
+.formulario {
+  padding: 4em;
+  background-color: black;
+  color: white;
 }
 
 footer {
   background-color: #333333;
-  height: 200px;
+  /*height: 200px;*/
   color: white;
-  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-footer .nav2 {
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-  padding: 30px;
+footer .div1-footer {
+  margin: 1em;
 }
 
-.clientescon {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+footer .div2-footer {
+  display: 1em;
 }
 
-.servicioscon {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding-top: 70px;
-}
-
-.mainservicio {
-  padding-top: 70px;
-}
-
-.equiposcon {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+footer .div2-footer .infolegal {
+  border-right: solid 3px;
 }
 /*# sourceMappingURL=style.css.map */

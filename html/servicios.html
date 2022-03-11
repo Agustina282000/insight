@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios</title>
     <link rel="shortcut icon" href="../imagenes/shorticon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../scss/style.css">
 </head>
 
 <body>
 
     <header class="containerfluid">
-        <section class= "header__nav">
-            <div class="header__nav--logo">
+        <section class= "nav">
+            <div class="logo-nav">
 
-                <img id= "imagen1" src="../imagenes/logo-blanco.png"  width="180">
+                <img loading=”lazy” id= "imagen1" src="../imagenes/logo-blanco.png"  width="180">
                 
             </div>
        
-                <div class= "header__nav--nav">
+                <div class= "nav-links">
                    <nav>
                        <a href="../index.html">INICIO</a> 
                        <a href="./nosotros.html">NOSOTROS</a>
                        <a href="#">SERVICIOS</a> 
-                       <a href="./equipos.html">EQUIPOS</a>  
+                       <a href="./grupos.html">GRUPOS</a>  
                        <a href="./contacto.html">CONTACTO</a>  
                    </nav>
                </div> 
             </section>
        
-            <div class= "header__img">
+            <div class= "fondo-header">
                   
                    <h1 id=título>Servicios</h1>
                
@@ -43,71 +42,60 @@
                
     </header>
    
-    <main class="container">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <div class="card">
-                <img src="https://picsum.photos/200" class="card-img-top" alt="servicio1">
-                <div class="card-body">
-                  <h5 class="card-title">Servicio 1</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem recusandae quibusdam vero, nam eum maxime placeat consequatur suscipit esse modi consequuntur deserunt molestiae quisquam, facilis aliquid delectus odit quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sequi nulla illo corporis adipisci, sed, mollitia vel, iure fugiat enim voluptatibus deleniti reprehenderit. Est consequatur, sequi error quis perferendis sed?</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="https://picsum.photos/200" class="card-img-top" alt="servicio 2">
-                <div class="card-body">
-                  <h5 class="card-title">Servicio 2</h5>
-                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, facere iure non id quibusdam, nobis quidem tempora vel temporibus repellat, aut adipisci quo minus sint praesentium molestiae magnam fuga a. Lorem ipsum dolor sit amet consectetur adipisicing elit. A aspernatur iusto suscipit tempora. Corrupti eius deserunt ipsam asperiores sit illo, nemo quaerat quidem aspernatur. Quis, natus. Sed quibusdam beatae voluptas..</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="https://picsum.photos/200" class="card-img-top" alt="Servicio 3">
-                <div class="card-body">
-                  <h5 class="card-title">Servicio 3</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fuga commodi nulla, vel perferendis enim minima optio sit, et repudiandae est temporibus quasi modi error laboriosam officia aspernatur nostrum id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatum unde cupiditate veritatis doloribus in enim quasi, porro laboriosam voluptatibus numquam. Atque excepturi porro nostrum alias sed animi quasi? Sunt!</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="https://picsum.photos/200" class="card-img-top" alt="Servicio 4">
-                <div class="card-body">
-                  <h5 class="card-title">Servicio 4</h5>
-                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis vel magnam praesentium blanditiis facilis. Nesciunt quaerat ratione, labore dolorum soluta quas dolorem, non, expedita harum similique quibusdam optio molestiae quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laborum nisi fugiat, alias cumque similique laudantium beatae quos eligendi nostrum voluptatem molestiae incidunt libero nam numquam nobis corporis voluptas eos?</p>
-                </div>
-              </div>
-            </div>
-          </div>
-    </main>
-        <br>
+   <body>
+     <section class="servicios">
+<div class="servicioclouds">
+ <h1>CLOUDS & DEVOPS</h1>
+ <p>Cloud, permite aislar los servicios a nivel de sus distintas capas; red, aplicación, middleware,administración, seguridad, etc. DevOps, aplica el aislamiento, permitiendo convertir aplicaciones monolíticas en componentes desplegables que restructuren las aplicaciones para hacerlas más fácilmente gestionables.</p> 
+</div>
 
-        <footer class="container">
+<div class="servicioback">
+  <h1>BACK-END</h1>
+  <p>El backend es la parte del desarrollo web que se encarga de que toda la lógica de una página web funcione. Se trata del conjunto de acciones que pasan en una web pero que no vemos como, por ejemplo, la comunicación con el servidor.</p> 
+ </div>
 
-    
-            <nav class="nav2">
-                <a href="../index.html">INICIO</a>
-                <a href="./nosotros.html">NOSOTROS</a>
-                <a href="./servicios.html">SERVICIOS</a>
-                <a href="./equipos.html">EQUIPOS</a>
-                <a href="./contacto.html">CONTACTO</a>  
-            </nav>
-         
-     <div>
-       <p>Todos lo derechos reservados</p>
-     </div>
-          
-         <div>
-            <img src="./diseño grafico de marca/img/87390.png"width= "25" alt="icono insta">
-            <img src="./diseño grafico de marca/img/linkedin.png" width= "25"alt="icono linkedin">
-            <img src="./diseño grafico de marca/img/twitter.png"width= "25" alt="icono twitter">
+ <div class="serviciograph">
+  <h1>GRAPHIC & MEDIA</h1>
+  <p>Es una disciplina orientada a satisfacer las necesidades de comunicación visual mediante el diseño y producción de mensajes gráficos significativos desde una perspectiva crítica, a partir del conocimiento y la aplicación de los diferentes procesos.</p> 
+ </div>
+
+ <div class= "servicioblock">
+  <h1>BLOCKCHAIN</h1>
+  <p>Es de un conjunto de tecnologías que permiten llevar un registro seguro, descentralizado, sincronizado y distribuido de las operaciones digitales, sin necesidad de la intermediación de terceros.</p> 
+ </div>
+
+ <div class="serviciomachine">
+  <h1>MACHINE LEARNING</h1>
+  <p>Es una disciplina del campo de la Inteligencia Artificial que, a través de algoritmos, dota a los ordenadores de la capacidad de identificar patrones en datos masivos y elaborar predicciones.</p> 
+ </div>
+
+ <div class="servicioux">
+  <h1>UX</h1>
+  <p>El término UX viene de User Experience, o Experiencia del Usuario. Básicamente es cómo una persona se siente mientras usa cualquier producto o servicio digital que tu empresa ofrece. UX tiene que ver también con la sensación de esta persona después de usar tu producto.</p> 
+ </div>
+
+     </section>
+   </body>
+
+   <footer>
+<footer>
+        <div class="div1-footer">
+         <img src="" alt="iconowpp" width="100">
+         <img src="" alt="iconolinkedin" width="100">
+         <img src="" alt="iconoinstagram" width="100">
          </div>
-              
-     </footer>
+         <div class="div2-footer">
+            <img loading=”lazy” src="../imagenes/logo-blanco.png" alt="logo" width="180">
+         <p>Copyright 2022 HubSpace, Inc</p>
+         <div>
+            <a href="">Información legal</a>
+            <a href="">Política de privacidad</a>
+         </div>
+   
+        </div>
+ </footer>
+</body>
+
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        </body>
-</html>
+</html>    
 

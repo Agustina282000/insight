@@ -69,6 +69,7 @@ header .fondo-header {
 
 .sobre-nosotros .sobre-nosotros-texto .botonleermas {
   background-color: #F1524F;
+  background-size: cover;
   padding: 0.5em;
   border-radius: 0.5em;
   -webkit-box-shadow: 3px 3px 15px #333333;

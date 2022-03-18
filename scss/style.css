@@ -40,12 +40,12 @@ header {
 }
 
 header .fondo-header {
-  background-image: url(../imagenes/imagn.jpg);
+  background-image: url(../imagenes/fondoheader.jpg);
   height: 100%;
   width: 100%;
   height: 650px;
   text-align: center;
-  size: 90;
+  background-size: cover;
 }
 
 .sobre-nosotros {

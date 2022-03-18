@@ -3,31 +3,12 @@ $rosa: #F1524F;
 $blanco: white;
 $blancotrans: rgba(255, 255, 255, 0.377);
 $negro: black;
-$tipografía-parrafo:'Montserrat', sans-serif;
-$tipografía-titulo: 'Montserrat', sans-serif;
+$tipografia-parrafo:'Montserrat', sans-serif;
+$tipografia-titulo: 'Montserrat', sans-serif;
 $verde: #219315;
-$azulclaro: #3f729b
+$azulclaro: #3f729b;
 
-
-/*****Map*****/
-
-$coloricono (
-    whatsapp: $verde,
-    instagram: $azulclaro,
-    linkedin: $negro,
-);
-
-@each $verde, $color in $coloricono {
-    .whatsapp #{$verde} {
-        color: $coloricono;
-    }
-    .linkedin #{$negro} {
-        color:$coloricono;
-    }
-    .instagram #{$azulclaro} {
-        color: $coloricono;
-    }
- };
+/* Agregar map y each */
 
  @mixin padding($padding-top, $padding-bottom) {
     padding-top: $padding-top;
@@ -43,7 +24,7 @@ $coloricono (
 }
 
 #título {
-    font-family: $tipografía-titulo;
+    font-family: $tipografia-titulo;
     text-align: center;
     font-size: 90pt;
     color: $blanco;
@@ -52,52 +33,41 @@ $coloricono (
 }
 
 a {
-    font-family: $tipografía-parrafo;
+    font-family: $tipografia-parrafo;
     text-decoration: none;
     color: $blanco;
     font-size: 19px;
    }
 
 body {
-    font-family: $tipografía-parrafo, 200;
+    font-family: $tipografia-parrafo;
+    font-size: 12pt;
     text-align: left;
 }
 
 h3 {
-    font-size: 50px;
-    font-family: $tipografía-titulo, 500;
+    font-size: 50pt;
+    font-family: $tipografia-titulo, 500;
     text-align: left;
 }
 
 //........Header........//
 
 header {
-    font-family:$tipografía-parrafo;
-    background-image: url(../imagenes/imagn.jpg);
+    font-family:$tipografia-parrafo;
     .fondo-header {
     
+       background-image: url(../imagenes/imagn.jpg);
+        height: 100%; 
+        width: 100%;
         height: 650px;
         text-align: center;
-        size: 300px;
+        size: 90;
+        
     }
-    .nav {
-        display: flex;
-        justify-content: space-between ;
-        .logo-nav {
-            margin-top: 30px;
-            margin-left: 50px;
-        }
-        .nav-links {
-            flex-direction: row;
-            padding-top: 40px;
-            padding-right: 50px;
-            font-family: $tipografia-parrafo ; 
-           word-spacing: 50px;
-           font-size: 13pt;
-          
-        }
-        flex-direction: row; }
-    background-size:cover;}
+
+    }
+    
 
 //.........Inicio.........//
  
@@ -146,8 +116,17 @@ header {
             @include padding (2em, 0.5em);
         }
         .botonleermas2 {
-            @extend .botonleermas;
+            background-color: $rosa;
+            padding: 0.5em;
+            border-radius: 0.5em;
+            box-shadow: 3px 3px 15px #333333;
+            transition: ease-in-out .3s;
+            &:hover {
+                background-color: $blanco;
+                color:$rosa;
             }
+
+        }
         }
     }
     .servicios-index-cards {
@@ -236,14 +215,24 @@ header {
         margin-bottom: 1em; 
     }
     .boton-contactanos {
-        @extend .botonleermas
+            background-color: $rosa;
+            padding: 0.5em;
+            border-radius: 0.5em;
+            box-shadow: 3px 3px 15px #333333;
+            transition: ease-in-out .3s;
+            display: flex;
+            justify-content: center;
+            &:hover {
+                background-color: $blanco;
+                color:$rosa;
+            }
+
         }
-    
 }
 
-//.........Nosotros.......//
+//........Nosotros.......//
 
- .presentacion {
+.presentacion {
     background-color: $negro;
     color: $blanco;
     padding: 200px;
@@ -366,20 +355,20 @@ header {
 
 footer {
     background-color: #333333;
-    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
     .iconos {
         margin: 1em;
         display: flex;
         flex-direction: row;
-        color:$coloricono
     }
     .logo-footer {
         display: 1em;
         .infolegal {
             border-right: solid 3px;
             color: $blanco;
-            font-family: $tipografía-parrafo;
+            font-family: $tipografia-parrafo;
         }
     }
 }
-

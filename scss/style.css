@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /******Variables*****/
+/* Agregar map y each */
 * {
   margin: 0;
   padding: 0;
@@ -23,56 +24,28 @@ a {
 }
 
 body {
-  font-family: "Montserrat", sans-serif, 200;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12pt;
   text-align: left;
 }
 
 h3 {
-  font-size: 50px;
+  font-size: 50pt;
   font-family: "Montserrat", sans-serif, 500;
   text-align: left;
 }
 
 header {
   font-family: "Montserrat", sans-serif;
-  background-image: url(../imagenes/imagn.jpg);
-  background-size: cover;
 }
 
 header .fondo-header {
+  background-image: url(../imagenes/imagn.jpg);
+  height: 100%;
+  width: 100%;
   height: 650px;
   text-align: center;
-  size: 300px;
-}
-
-header .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-header .nav .logo-nav {
-  margin-top: 30px;
-  margin-left: 50px;
-}
-
-header .nav .nav-links {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding-top: 40px;
-  padding-right: 50px;
-  font-family: 'Montserrat', sans-serif;
-  word-spacing: 50px;
-  font-size: 13pt;
+  size: 90;
 }
 
 .sobre-nosotros {
@@ -150,7 +123,7 @@ header .nav .nav-links {
   color: #F1524F;
 }
 
-.servicios-index .servicios-index-cards {
+.servicios-index-cards {
   color: white;
   display: -ms-grid;
   display: grid;
@@ -163,7 +136,7 @@ header .nav .nav-links {
   grid-column-gap: 1em;
 }
 
-.servicios-index .servicios-index-cards .servicio-card1 {
+.servicios-index-cards .servicio-card1 {
   background-color: rgba(255, 255, 255, 0.377);
   padding: 5px;
   -webkit-box-sizing: 10px;
@@ -172,7 +145,7 @@ header .nav .nav-links {
   padding-top: 2em;
 }
 
-.servicios-index .servicios-index-cards .servicio-card2 {
+.servicios-index-cards .servicio-card2 {
   background-color: rgba(255, 255, 255, 0.377);
   padding: 10px;
   -webkit-box-sizing: 20px;
@@ -181,7 +154,7 @@ header .nav .nav-links {
   padding-top: 2em;
 }
 
-.servicios-index .servicios-index-cards .servicio-card3 {
+.servicios-index-cards .servicio-card3 {
   background-color: rgba(255, 255, 255, 0.377);
   padding: 10px;
   -webkit-box-sizing: 20px;
@@ -190,7 +163,7 @@ header .nav .nav-links {
   padding-top: 2em;
 }
 
-.servicios-index .servicios-index-cards .servicio-card4 {
+.servicios-index-cards .servicio-card4 {
   background-color: rgba(255, 255, 255, 0.377);
   padding: 10px;
   -webkit-box-sizing: 20px;
@@ -199,7 +172,7 @@ header .nav .nav-links {
   padding-top: 2em;
 }
 
-.servicios-index .servicios-index-cards .servicio-card5 {
+.servicios-index-cards .servicio-card5 {
   background-color: rgba(255, 255, 255, 0.377);
   padding: 10px;
   -webkit-box-sizing: 20px;
@@ -208,7 +181,7 @@ header .nav .nav-links {
   padding-top: 2em;
 }
 
-.servicios-index .servicios-index-cards .servicio-card6 {
+.servicios-index-cards .servicio-card6 {
   background-color: rgba(255, 255, 255, 0.377);
   padding: 10px;
   -webkit-box-sizing: 20px;
@@ -258,7 +231,6 @@ header .nav .nav-links {
 }
 
 .contactanos-index .boton-contactanos {
-  margin-left: 21em;
   background-color: #F1524F;
   padding: 0.5em;
   border-radius: 0.5em;
@@ -266,6 +238,12 @@ header .nav .nav-links {
           box-shadow: 3px 3px 15px #333333;
   -webkit-transition: ease-in-out .3s;
   transition: ease-in-out .3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contactanos-index .boton-contactanos:hover {
@@ -344,49 +322,49 @@ header .nav .nav-links {
 .servicios .servicioclouds {
   background-color: rgba(255, 255, 255, 0.377);
   padding-top: 8em;
+  padding-bottom: 3em;
   padding-left: 2em;
   padding-right: 2em;
-  padding-bottom: 3em;
 }
 
 .servicios .servicioback {
   background-color: rgba(255, 255, 255, 0.377);
   padding-top: 8em;
+  padding-bottom: 3em;
   padding-left: 2em;
   padding-right: 2em;
-  padding-bottom: 3em;
 }
 
 .servicios .serviciograph {
   background-color: rgba(255, 255, 255, 0.377);
   padding-top: 8em;
+  padding-bottom: 3em;
   padding-left: 2em;
   padding-right: 2em;
-  padding-bottom: 3em;
 }
 
 .servicios .servicioblock {
   background-color: rgba(255, 255, 255, 0.377);
   padding-top: 8em;
+  padding-bottom: 3em;
   padding-left: 2em;
   padding-right: 2em;
-  padding-bottom: 3em;
 }
 
 .servicios .serviciomachine {
   background-color: rgba(255, 255, 255, 0.377);
   padding-top: 8em;
+  padding-bottom: 3em;
   padding-left: 2em;
   padding-right: 2em;
-  padding-bottom: 3em;
 }
 
 .servicios .servicioux {
   background-color: rgba(255, 255, 255, 0.377);
   padding-top: 8em;
+  padding-bottom: 3em;
   padding-left: 2em;
   padding-right: 2em;
-  padding-bottom: 3em;
 }
 
 .maingrupo {
@@ -420,26 +398,32 @@ header .nav .nav-links {
 
 footer {
   background-color: #333333;
-  /*height: 200px;*/
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  justify-items: center;
 }
 
-footer .div1-footer {
+footer .iconos {
   margin: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-footer .div2-footer {
+footer .logo-footer {
   display: 1em;
 }
 
-footer .div2-footer .infolegal {
+footer .logo-footer .infolegal {
   border-right: solid 3px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

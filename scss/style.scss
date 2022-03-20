@@ -84,7 +84,7 @@ header {
             @include padding (2em, 0.5em);
         }
         .botonleermas {
-            background-color: $rosa;
+            background-color: #385f6b;
             background-size: cover;
             padding: 0.5em;
             border-radius: 0.5em;
@@ -92,7 +92,7 @@ header {
             transition: ease-in-out .3s;
             &:hover {
                 background-color: $blanco;
-                color:$rosa;
+                color: #385f6b;
             }
 
         }
@@ -102,7 +102,7 @@ header {
     }
  }
 .servicios-index {
-    background-image: url(../imagenes/fondo-inicio.1.jpg);
+    background-image: url(../imagenes/fondoheader.jpg);
     background-size: cover;
     height: 650px;
     size: 300px;
@@ -117,14 +117,14 @@ header {
             @include padding (2em, 0.5em);
         }
         .botonleermas2 {
-            background-color: $rosa;
+            background-color: #385f6b;
             padding: 0.5em;
             border-radius: 0.5em;
             box-shadow: 3px 3px 15px #333333;
             transition: ease-in-out .3s;
             &:hover {
                 background-color: $blanco;
-                color:$rosa;
+                color:#385f6b;
             }
 
         }
@@ -193,14 +193,14 @@ header {
         padding-left: 50px;
         color: $blanco;
         .botonleermas {
-            background-color: $rosa;
+            background-color: #385f6b;
             padding: 0.5em;
             border-radius: 0.5em;
             box-shadow: 3px 3px 15px #333333;
             transition: ease-in-out .3s;
             &:hover {
                 background-color: $blanco;
-                color:$rosa;
+                color:#385f6b;
             }
         }
     }
@@ -216,7 +216,7 @@ header {
         margin-bottom: 1em; 
     }
     .boton-contactanos {
-            background-color: $rosa;
+            background-color: #385f6b;
             padding: 0.5em;
             border-radius: 0.5em;
             box-shadow: 3px 3px 15px #333333;
@@ -225,7 +225,7 @@ header {
             justify-content: center;
             &:hover {
                 background-color: $blanco;
-                color:$rosa;
+                color:#385f6b;
             }
 
         }
@@ -262,13 +262,13 @@ header {
         justify-content: center;
         padding-top: 30px;
         .icono-foco {
-            color: $rosa;
+            color: #385f6b;
         }
         .icono-mano {
-            color: $rosa;
+            color: #385f6b;
         }
         .icono-persona {
-            color: $rosa;
+            color: #385f6b;
         }
         }
     }
@@ -355,21 +355,38 @@ header {
 //......Footer......//
 
 footer {
-    background-color: #333333;
-    display: flex;
-    justify-content: space-around;
-    justify-items: center;
+    background-color: #1f1e1e;
+    padding-left: 500px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     .iconos {
-        margin: 1em;
+        
+        padding-bottom: 20px;
+        padding-left: 110px;
+        color: white;
+        width: 300px;  
         display: flex;
         flex-direction: row;
-    }
-    .logo-footer {
-        display: 1em;
-        .infolegal {
-            border-right: solid 3px;
-            color: $blanco;
-            font-family: $tipografia-parrafo;
         }
+     .icono-wpp {
+      padding-left: 30px;
+      &:hover {
+        color: #385f6b;
+     }
+    }
+     .icono-linkedin {
+      padding-left: 30px;
+      &:hover {
+      color: #385f6b;
+     }
+    }
+     .icono-instagram {
+      padding-left: 30px;
+      &:hover {
+      color: #385f6b;
+     }
+    }
+    .copyright {
+        color:white
     }
 }

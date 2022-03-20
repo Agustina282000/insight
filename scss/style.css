@@ -68,7 +68,7 @@ header .fondo-header {
 }
 
 .sobre-nosotros .sobre-nosotros-texto .botonleermas {
-  background-color: #F1524F;
+  background-color: #385f6b;
   background-size: cover;
   padding: 0.5em;
   border-radius: 0.5em;
@@ -80,7 +80,7 @@ header .fondo-header {
 
 .sobre-nosotros .sobre-nosotros-texto .botonleermas:hover {
   background-color: white;
-  color: #F1524F;
+  color: #385f6b;
 }
 
 .sobre-nosotros .sobre-nosotros-imagen {
@@ -88,7 +88,7 @@ header .fondo-header {
 }
 
 .servicios-index {
-  background-image: url(../imagenes/fondo-inicio.1.jpg);
+  background-image: url(../imagenes/fondoheader.jpg);
   background-size: cover;
   height: 650px;
   size: 300px;
@@ -110,7 +110,7 @@ header .fondo-header {
 }
 
 .servicios-index .servicios-index-texto .botonleermas2 {
-  background-color: #F1524F;
+  background-color: #385f6b;
   padding: 0.5em;
   border-radius: 0.5em;
   -webkit-box-shadow: 3px 3px 15px #333333;
@@ -121,7 +121,7 @@ header .fondo-header {
 
 .servicios-index .servicios-index-texto .botonleermas2:hover {
   background-color: white;
-  color: #F1524F;
+  color: #385f6b;
 }
 
 .servicios-index-cards {
@@ -206,7 +206,7 @@ header .fondo-header {
 }
 
 .clientes .clientes-texto .botonleermas {
-  background-color: #F1524F;
+  background-color: #385f6b;
   padding: 0.5em;
   border-radius: 0.5em;
   -webkit-box-shadow: 3px 3px 15px #333333;
@@ -217,7 +217,7 @@ header .fondo-header {
 
 .clientes .clientes-texto .botonleermas:hover {
   background-color: white;
-  color: #F1524F;
+  color: #385f6b;
 }
 
 .contactanos-index {
@@ -232,7 +232,7 @@ header .fondo-header {
 }
 
 .contactanos-index .boton-contactanos {
-  background-color: #F1524F;
+  background-color: #385f6b;
   padding: 0.5em;
   border-radius: 0.5em;
   -webkit-box-shadow: 3px 3px 15px #333333;
@@ -249,7 +249,7 @@ header .fondo-header {
 
 .contactanos-index .boton-contactanos:hover {
   background-color: white;
-  color: #F1524F;
+  color: #385f6b;
 }
 
 .presentacion {
@@ -295,15 +295,15 @@ header .fondo-header {
 }
 
 .acciones .acciones-items .icono-foco {
-  color: #F1524F;
+  color: #385f6b;
 }
 
 .acciones .acciones-items .icono-mano {
-  color: #F1524F;
+  color: #385f6b;
 }
 
 .acciones .acciones-items .icono-persona {
-  color: #F1524F;
+  color: #385f6b;
 }
 
 .servicios {
@@ -398,17 +398,17 @@ header .fondo-header {
 }
 
 footer {
-  background-color: #333333;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  justify-items: center;
+  background-color: #1f1e1e;
+  padding-left: 500px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 footer .iconos {
-  margin: 1em;
+  padding-bottom: 20px;
+  padding-left: 110px;
+  color: white;
+  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,13 +418,31 @@ footer .iconos {
           flex-direction: row;
 }
 
-footer .logo-footer {
-  display: 1em;
+footer .icono-wpp {
+  padding-left: 30px;
 }
 
-footer .logo-footer .infolegal {
-  border-right: solid 3px;
+footer .icono-wpp:hover {
+  color: #385f6b;
+}
+
+footer .icono-linkedin {
+  padding-left: 30px;
+}
+
+footer .icono-linkedin:hover {
+  color: #385f6b;
+}
+
+footer .icono-instagram {
+  padding-left: 30px;
+}
+
+footer .icono-instagram:hover {
+  color: #385f6b;
+}
+
+footer .copyright {
   color: white;
-  font-family: "Montserrat", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

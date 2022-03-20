@@ -4,6 +4,7 @@ $blanco: white;
 $blancotrans: rgba(255, 255, 255, 0.377);
 $negro: black;
 $tipografia:'Montserrat', sans-serif;
+$tipografia-texto: 'Quicksand', sans-serif;
 $verde: #219315;
 $azulclaro: #3f729b;
 
@@ -38,27 +39,31 @@ a {
     font-size: 18px;
    }
 
-body {
-    font-family: $tipografia;
-    font-size: 12pt;
-    text-align: left;
-}
+
 
 h3 {
     font-size: 25pt;
     font-family: $tipografia;
-    text-align: left;
+    
+}
+p {
+    font-family: $tipografia-texto;
+    font-size: 12pt;
 }
 
 //........Header........//
 
 header {
     color: white;
+    h3{
+        text-align: center;
+    }
     p {
         padding-top: 20px;
         padding-left: 200px;
         padding-right: 200px;
         padding-bottom: 20px;
+        text-align: center;
     }
     .fondo-header {
     
@@ -93,13 +98,14 @@ header {
  
 .nosotros {
     background-color: #1f1e1e;
-    height: 650px;
+    height: 760px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     
     .texto-nosotros {
-        padding-top: 150px;
-        padding-left: 50px;
+        padding-top: 100px;
+        padding-left: 30px;
+        padding-right: 70px;
         color: $blanco;
         .parrafo-sobrenos {
             @include padding (2em, 0.5em);
@@ -109,136 +115,101 @@ header {
         padding: 70px;
         padding-top: 85px;
     }
+    .titulo-servicios {
+        color: white;
+        padding-left: 600px;
+        padding-bottom: 30px;
+    }
  }
-.servicios-index {
-    background-image: url(../imagenes/fondoheader.jpg);
-    background-size: cover;
-    height: 650px;
-    size: 300px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
 
-    .servicios-index-texto {
-        padding-top: 250px;
-        padding-left: 50px;
-        color:$blanco;
-        .parrafo-servicios {
-            @include padding (2em, 0.5em);
-        }
-        .botonleermas2 {
-            background-color: #385f6b;
-            padding: 0.5em;
-            border-radius: 0.5em;
-            box-shadow: 3px 3px 15px #333333;
-            transition: ease-in-out .3s;
-            &:hover {
-                background-color: $blanco;
-                color:#385f6b;
-            }
+//.........Servicios.......// 
 
-        }
+.servicios {
+    display: flex;
+    grid-template-columns: repeat (4,1fr);
+    padding: 0;
+    .clouds {
+        background-image: url(../imagenes/clouds.jpg);
+        background-size: cover;
+        height: 590px;
+        width: 350px;
+        transition: ease-in-out .3s;
+        &:hover {
+            background-image: url(../imagenes/cloudactive.jpg);
         }
     }
-    .servicios-index-cards {
-        color: $blanco;
-        display: grid;
-        padding-right: 50px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-row-gap: 1em;
-        grid-column-gap: 1em;
-        .servicio-card1 {
-        background-color: $blancotrans;
-        padding: 5px;
-        box-sizing: 10px;
-        margin-top: 6em;
-        padding-top: 2em;
-        }
-        .servicio-card2 {
-        background-color: $blancotrans;
-        padding: 10px;
-        box-sizing: 20px;
-        margin-top: 6em;
-        padding-top: 2em;
-        }
-        .servicio-card3 {
-        background-color: $blancotrans;
-        padding: 10px;
-        box-sizing: 20px;
-        margin-top: 6em;
-        padding-top: 2em;
-        }
-        .servicio-card4 {
-        background-color: $blancotrans;
-        padding: 10px;
-        box-sizing: 20px;
-        margin-bottom: 6em;
-        padding-top: 2em;
-        }
-        .servicio-card5 {
-        background-color: $blancotrans;
-        padding: 10px;
-        box-sizing: 20px;
-        margin-bottom: 6em;
-        padding-top: 2em;
-        }
-        .servicio-card6 {
-        background-color: $blancotrans;
-        padding: 10px;
-        box-sizing: 20px;
-        margin-bottom: 6em;
-        padding-top: 2em;
+    .back {
+        background-image: url(../imagenes/back.jpg);
+        background-size: cover;
+        height: 590px;
+        width: 350px;
+        transition: ease-in-out .3s;
+        &:hover {
+            background-image: url(../imagenes/backendactive.jpg);
         }
     }
-    
-
-
-.clientes {
-    background-color: $negro;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    .clientes-texto {
-        padding-top: 150px;
-        padding-left: 50px;
-        color: $blanco;
-        .botonleermas {
-            background-color: #385f6b;
-            padding: 0.5em;
-            border-radius: 0.5em;
-            box-shadow: 3px 3px 15px #333333;
-            transition: ease-in-out .3s;
-            &:hover {
-                background-color: $blanco;
-                color:#385f6b;
-            }
+    .ux{
+        background-image: url(../imagenes/ux.jpg);
+        background-size: cover;
+        height: 590px;
+        width: 350px;
+        transition: ease-in-out .3s;
+        &:hover {
+            background-image: url(../imagenes/uxactive.jpg);
         }
     }
-    
+    .graphics {
+        background-image: url(../imagenes/graphic.jpg);
+        background-size: cover;
+        height: 590px;
+        width: 350px;
+        transition: ease-in-out .3s;
+        &:hover {
+            background-image: url(../imagenes/graphicactive.jpg);
+        }
+    }
 
 }
-.contactanos-index {
-    background-color: $negro;
+
+//..........Grupos..........//
+.grupos {
+        background-color: #1f1e1e;
+        height: 650px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+        .texto-grupos {
+            padding-top: 180px;
+            padding-left: 30px;
+            padding-right: 70px;
+            color: $blanco;
+            text-align: right;
+            .parrafo-grupos {
+                @include padding (2em, 0.5em);
+            }
+        }
+        .imagen-grupos {
+            padding: 70px;
+            padding-top: 85px;
+        }
+}
+
+//..........Contacto.......//
+
+.contacto {
+    background-color:#385f6b ;
     color: white;
-    padding: 200px;
-    .contactanos-texto {
+    padding: 100px;
+    .contacto-titulo {
         text-align: center; 
         margin-bottom: 1em; 
     }
-    .boton-contactanos {
-            background-color: #385f6b;
-            padding: 0.5em;
-            border-radius: 0.5em;
-            box-shadow: 3px 3px 15px #333333;
-            transition: ease-in-out .3s;
-            display: flex;
-            justify-content: center;
-            &:hover {
-                background-color: $blanco;
-                color:#385f6b;
-            }
-
-        }
+  
 }
+
+
+
+
 
 //........Nosotros.......//
 
@@ -284,7 +255,7 @@ header {
 
 
 //........Servicios.......//
-.servicios {
+.servicioss {
     background-color: $negro;
     color: $blanco;
     display: grid;
@@ -351,14 +322,6 @@ header {
     }
 }
 
-//......Contacto.....//
-
-.formulario {
-    padding: 4em;
-    background-color: $negro;
-    color: $blanco;
-    
-}
 
 
 //......Footer......//

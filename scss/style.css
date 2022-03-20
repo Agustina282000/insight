@@ -11,7 +11,7 @@
 #título {
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  font-size: 90pt;
+  font-size: 40pt;
   color: white;
   padding-top: 210px;
 }
@@ -20,7 +20,7 @@ a {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: white;
-  font-size: 19px;
+  font-size: 18px;
 }
 
 body {
@@ -30,17 +30,24 @@ body {
 }
 
 h3 {
-  font-size: 50pt;
-  font-family: "Montserrat", sans-serif, 500;
+  font-size: 25pt;
+  font-family: "Montserrat", sans-serif;
   text-align: left;
 }
 
 header {
-  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+header p {
+  padding-top: 20px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 20px;
 }
 
 header .fondo-header {
-  background-image: url(../imagenes/fondoheader.jpg);
+  background-image: url(../imagenes/fondo-inicio.jpg);
   height: 100%;
   width: 100%;
   height: 650px;
@@ -48,27 +55,9 @@ header .fondo-header {
   background-size: cover;
 }
 
-.sobre-nosotros {
-  background-color: black;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
-.sobre-nosotros .sobre-nosotros-texto {
-  padding-top: 150px;
-  padding-left: 50px;
-  color: white;
-}
-
-.sobre-nosotros .sobre-nosotros-texto .parrafo-sobrenos {
-  padding-top: 2em;
-  padding-bottom: 0.5em;
-}
-
-.sobre-nosotros .sobre-nosotros-texto .botonleermas {
-  background-color: #385f6b;
+header .boton1 {
+  background-color: white;
+  color: #385f6b;
   background-size: cover;
   padding: 0.5em;
   border-radius: 0.5em;
@@ -78,13 +67,34 @@ header .fondo-header {
   transition: ease-in-out .3s;
 }
 
-.sobre-nosotros .sobre-nosotros-texto .botonleermas:hover {
-  background-color: white;
-  color: #385f6b;
+header .boton1:hover {
+  background-color: #385f6b;
+  color: white;
 }
 
-.sobre-nosotros .sobre-nosotros-imagen {
+.nosotros {
+  background-color: #1f1e1e;
+  height: 650px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.nosotros .texto-nosotros {
+  padding-top: 150px;
+  padding-left: 50px;
+  color: white;
+}
+
+.nosotros .texto-nosotros .parrafo-sobrenos {
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+}
+
+.nosotros .imagen-nosotros {
   padding: 70px;
+  padding-top: 85px;
 }
 
 .servicios-index {

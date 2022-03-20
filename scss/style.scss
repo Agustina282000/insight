@@ -3,8 +3,7 @@ $rosa: #F1524F;
 $blanco: white;
 $blancotrans: rgba(255, 255, 255, 0.377);
 $negro: black;
-$tipografia-parrafo:'Montserrat', sans-serif;
-$tipografia-titulo: 'Montserrat', sans-serif;
+$tipografia:'Montserrat', sans-serif;
 $verde: #219315;
 $azulclaro: #3f729b;
 
@@ -24,40 +23,46 @@ $azulclaro: #3f729b;
 }
 
 #título {
-    font-family: $tipografia-titulo;
+    font-family: $tipografia;
     text-align: center;
-    font-size: 90pt;
+    font-size: 40pt;
     color: $blanco;
     padding-top: 210px;
     
 }
 
 a {
-    font-family: $tipografia-parrafo;
+    font-family: $tipografia;
     text-decoration: none;
     color: $blanco;
-    font-size: 19px;
+    font-size: 18px;
    }
 
 body {
-    font-family: $tipografia-parrafo;
+    font-family: $tipografia;
     font-size: 12pt;
     text-align: left;
 }
 
 h3 {
-    font-size: 50pt;
-    font-family: $tipografia-titulo, 500;
+    font-size: 25pt;
+    font-family: $tipografia;
     text-align: left;
 }
 
 //........Header........//
 
 header {
-    font-family:$tipografia-parrafo;
+    color: white;
+    p {
+        padding-top: 20px;
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-bottom: 20px;
+    }
     .fondo-header {
     
-       background-image: url(../imagenes/fondoheader.jpg);
+       background-image: url(../imagenes/fondo-inicio.jpg);
         height: 100%; 
         width: 100%;
         height: 650px;
@@ -65,40 +70,44 @@ header {
         background-size: cover;
         
     }
+    .boton1 {
+            background-color:$blanco;
+            color: #385f6b;
+            background-size: cover;
+            padding: 0.5em;
+            border-radius: 0.5em;
+            box-shadow: 3px 3px 15px #333333;
+            transition: ease-in-out .3s;
+            
+            &:hover {
+                background-color: #385f6b;
+                color: white;
+            }
+
+    }
 
     }
     
 
-//.........Inicio.........//
+//.........Nosotros.........//
  
-.sobre-nosotros {
-    background-color: $negro;
+.nosotros {
+    background-color: #1f1e1e;
+    height: 650px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     
-    .sobre-nosotros-texto {
+    .texto-nosotros {
         padding-top: 150px;
         padding-left: 50px;
         color: $blanco;
         .parrafo-sobrenos {
             @include padding (2em, 0.5em);
         }
-        .botonleermas {
-            background-color: #385f6b;
-            background-size: cover;
-            padding: 0.5em;
-            border-radius: 0.5em;
-            box-shadow: 3px 3px 15px #333333;
-            transition: ease-in-out .3s;
-            &:hover {
-                background-color: $blanco;
-                color: #385f6b;
-            }
-
-        }
     }
-    .sobre-nosotros-imagen {
+    .imagen-nosotros {
         padding: 70px;
+        padding-top: 85px;
     }
  }
 .servicios-index {

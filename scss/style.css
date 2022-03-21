@@ -206,191 +206,90 @@ header .boton1:hover {
   margin-bottom: 1em;
 }
 
-.presentacion {
-  background-color: black;
-  color: white;
-  padding: 200px;
-}
-
-.porque-escogernos {
-  background-image: url(../imagenes/fondo.nosotros.1.jpg);
-  background-size: cover;
-  height: 650px;
-  size: 300px;
-  color: white;
-}
-
-.porque-escogernos .texto-porque {
-  padding: 230px;
-}
-
-.porque-escogernos .texto-porque .parrafo-porque {
-  padding-top: 2em;
-}
-
-.acciones {
-  padding: 200px;
-  background-color: black;
-  color: white;
-}
-
-.acciones .acciones-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 30px;
-}
-
-.acciones .acciones-items .icono-foco {
-  color: #385f6b;
-}
-
-.acciones .acciones-items .icono-mano {
-  color: #385f6b;
-}
-
-.acciones .acciones-items .icono-persona {
-  color: #385f6b;
-}
-
-.servicioss {
-  background-color: black;
-  color: white;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  grid-row-gap: 1em;
-  grid-column-gap: 1em;
-  padding: 4em;
-}
-
-.servicioss .servicioclouds {
-  background-color: rgba(255, 255, 255, 0.377);
-  padding-top: 8em;
-  padding-bottom: 3em;
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-.servicioss .servicioback {
-  background-color: rgba(255, 255, 255, 0.377);
-  padding-top: 8em;
-  padding-bottom: 3em;
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-.servicioss .serviciograph {
-  background-color: rgba(255, 255, 255, 0.377);
-  padding-top: 8em;
-  padding-bottom: 3em;
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-.servicioss .servicioblock {
-  background-color: rgba(255, 255, 255, 0.377);
-  padding-top: 8em;
-  padding-bottom: 3em;
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-.servicioss .serviciomachine {
-  background-color: rgba(255, 255, 255, 0.377);
-  padding-top: 8em;
-  padding-bottom: 3em;
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-.servicioss .servicioux {
-  background-color: rgba(255, 255, 255, 0.377);
-  padding-top: 8em;
-  padding-bottom: 3em;
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-.maingrupo {
-  background-color: black;
-}
-
-.maingrupo .que-son {
-  color: white;
-  padding: 200px;
-}
-
-.maingrupo .que-son .parrafo-que-son {
-  padding-top: 2em;
-}
-
-.maingrupo .porque-contamos {
-  background-color: rgba(255, 255, 255, 0.377);
-  color: white;
-  padding: 200px;
-}
-
-.maingrupo .porque-contamos .porque-contamos-lista {
-  padding-top: 2em;
-}
-
-footer {
-  background-color: #1f1e1e;
-  padding-left: 500px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-footer .iconos {
-  padding-bottom: 20px;
-  padding-left: 110px;
-  color: white;
-  width: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-footer .icono-wpp {
-  padding-left: 30px;
-}
-
-footer .icono-wpp:hover {
-  color: #385f6b;
-}
-
-footer .icono-linkedin {
-  padding-left: 30px;
-}
-
-footer .icono-linkedin:hover {
-  color: #385f6b;
-}
-
-footer .icono-instagram {
-  padding-left: 30px;
-}
-
-footer .icono-instagram:hover {
-  color: #385f6b;
-}
-
-footer .copyright {
-  color: white;
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /*nosotros*/
+  .nosotros {
+    height: 1300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nosotros .texto-nosotros {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    text-align: center;
+  }
+  .nosotros .imagen-nosotros {
+    padding: 70px;
+    padding-top: 85px;
+  }
+  .nosotros .titulo-servicios {
+    color: white;
+    text-align: center;
+    padding-left: 35px;
+    padding-bottom: 0px;
+    padding-top: 50px;
+  }
+  /*servicios*/
+  .servicios {
+    height: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #1f1e1e;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .servicios .clouds {
+    height: 250px;
+    width: 350px;
+    background-position: center;
+  }
+  .servicios .back {
+    height: 250px;
+    width: 350px;
+    background-position: center;
+  }
+  .servicios .ux {
+    height: 250px;
+    width: 350px;
+    background-position: center;
+  }
+  .servicios .graphics {
+    height: 250px;
+    width: 350px;
+    background-position: center;
+  }
+  /*grupos*/
+  .grupos {
+    height: 1100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .grupos .texto-grupos {
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    text-align: center;
+  }
+  /*footer*/
 }
 /*# sourceMappingURL=style.css.map */

@@ -207,158 +207,83 @@ header {
   
 }
 
+//.......Media queries.....//
 
+/* Escritorio pequeño / tablet */
 
+@media only screen and (min-width: 768px) and (max-width: 991px){
 
+    /*nosotros*/
+    .nosotros {
 
-//........Nosotros.......//
-
-.presentacion {
-    background-color: $negro;
-    color: $blanco;
-    padding: 200px;
-}
-
- .porque-escogernos {
-    background-image: url(../imagenes/fondo.nosotros.1.jpg);
-    background-size: cover;
-    height: 650px;
-    size: 300px;
-    color: $blanco;
-.texto-porque {
-    padding: 230px;
-    .parrafo-porque {
-        padding-top: 2em;
-    }
-}}
-
- .acciones {
-    padding: 200px;
-    background-color: $negro;
-    color: $blanco;
-    .acciones-items {
+        height: 1300px;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-top: 30px;
-        .icono-foco {
-            color: #385f6b;
-        }
-        .icono-mano {
-            color: #385f6b;
-        }
-        .icono-persona {
-            color: #385f6b;
-        }
-        }
-    }
-
-
-//........Servicios.......//
-.servicioss {
-    background-color: $negro;
-    color: $blanco;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: 1em;
-    grid-column-gap: 1em;
-    padding: 4em;
-    .servicioclouds {
-    background-color: $blancotrans;
-    @include padding (8em, 3em);
-    padding-left: 2em;
-    padding-right: 2em;
-    }
-    .servicioback {
-    background-color: $blancotrans;
-    @include padding (8em, 3em);
-    padding-left: 2em;
-    padding-right: 2em;
-    }
-    .serviciograph {
-    background-color: $blancotrans;
-    @include padding (8em, 3em);
-    padding-left: 2em;
-    padding-right: 2em;
-    }
-    .servicioblock {
-    background-color: $blancotrans;
-    @include padding (8em, 3em);
-    padding-left: 2em;
-    padding-right: 2em;
-    }
-    .serviciomachine {
-    background-color: $blancotrans;
-    @include padding (8em, 3em);
-    padding-left: 2em;
-    padding-right: 2em;
-    }
-    .servicioux {
-    background-color: $blancotrans;
-    @include padding (8em, 3em);
-    padding-left: 2em;
-    padding-right: 2em;
-    }
-}
-//.......Grupos......//
-
-.maingrupo {
-    background-color: $negro;
-    .que-son {
-    color: $blanco;
-    padding: 200px;
-    .parrafo-que-son {
-        padding-top: 2em;
-    }
-    }
-    .porque-contamos {
-    background-color: $blancotrans;
-    color: $blanco;
-    padding: 200px;
-    .porque-contamos-lista {
-        padding-top: 2em;
-    }
-    }
-}
-
-
-
-//......Footer......//
-
-footer {
-    background-color: #1f1e1e;
-    padding-left: 500px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    .iconos {
+        flex-direction: column;
         
-        padding-bottom: 20px;
-        padding-left: 110px;
-        color: white;
-        width: 300px;  
-        display: flex;
-        flex-direction: row;
+        .texto-nosotros {
+            padding-top: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            color: $blanco;
+            text-align: center;
+            
         }
-     .icono-wpp {
-      padding-left: 30px;
-      &:hover {
-        color: #385f6b;
+        .imagen-nosotros {
+            padding: 70px;
+            padding-top: 85px;
+        }
+        .titulo-servicios {
+            color: white;
+            text-align: center;
+            padding-left: 35px;
+            padding-bottom: 0px;
+            padding-top: 50px;
+        }
      }
+    /*servicios*/
+    .servicios {
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        background-color: #1f1e1e;
+        align-items: center;
+        .clouds {
+            height: 250px;
+            width: 350px;
+            background-position: center;
+        }
+        .back {
+            height: 250px;
+            width: 350px;
+            background-position: center;
+        }
+        .ux{
+            height: 250px;
+            width: 350px;
+            background-position: center;
+        }
+        .graphics {
+            height: 250px;
+            width: 350px;
+            background-position: center;
+        }
+    
     }
-     .icono-linkedin {
-      padding-left: 30px;
-      &:hover {
-      color: #385f6b;
-     }
-    }
-     .icono-instagram {
-      padding-left: 30px;
-      &:hover {
-      color: #385f6b;
-     }
-    }
-    .copyright {
-        color:white
-    }
+    /*grupos*/
+    .grupos {
+        height: 1100px;
+        display: flex;
+        flex-direction: column;
+        
+        .texto-grupos {
+            padding-top: 100px;
+            padding-left: 30px;
+            padding-right: 30px;
+            color: $blanco;
+            text-align: center;
+          
+}
+}
+    /*footer*/
+    
 }

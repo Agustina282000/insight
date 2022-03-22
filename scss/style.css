@@ -64,8 +64,8 @@ header .boton1 {
   background-size: cover;
   padding: 0.5em;
   border-radius: 0.5em;
-  -webkit-box-shadow: 3px 3px 15px #333333;
-          box-shadow: 3px 3px 15px #333333;
+  -webkit-box-shadow: 3px 3px 15px, #1f1e1e;
+          box-shadow: 3px 3px 15px, #1f1e1e;
   -webkit-transition: ease-in-out .3s;
   transition: ease-in-out .3s;
 }
@@ -206,8 +206,57 @@ header .boton1:hover {
   margin-bottom: 1em;
 }
 
-/* Escritorio pequeño / tablet */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+footer {
+  background-color: #1f1e1e;
+  padding-left: 500px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer .iconos {
+  padding-bottom: 20px;
+  padding-left: 110px;
+  color: white;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .icono-wpp {
+  padding-left: 30px;
+}
+
+footer .icono-wpp:hover {
+  color: #385f6b;
+}
+
+footer .icono-linkedin {
+  padding-left: 30px;
+}
+
+footer .icono-linkedin:hover {
+  color: #385f6b;
+}
+
+footer .icono-instagram {
+  padding-left: 30px;
+}
+
+footer .icono-instagram:hover {
+  color: #385f6b;
+}
+
+footer .copyright {
+  color: white;
+}
+
+/*Desktop*/
+@media only screen and (min-width: 992px) and (max-width: 1075px) {
   /*nosotros*/
   .nosotros {
     height: 1300px;
@@ -229,9 +278,9 @@ header .boton1:hover {
   .nosotros .imagen-nosotros {
     padding: 70px;
     padding-top: 85px;
+    padding-left: 200px;
   }
   .nosotros .titulo-servicios {
-    color: white;
     text-align: center;
     padding-left: 35px;
     padding-bottom: 0px;
@@ -291,5 +340,288 @@ header .boton1:hover {
     text-align: center;
   }
   /*footer*/
+  footer {
+    padding-left: 400px;
+  }
+}
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /*nosotros*/
+  .nosotros {
+    height: 1300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nosotros .texto-nosotros {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    text-align: center;
+  }
+  .nosotros .imagen-nosotros {
+    padding: 70px;
+    padding-top: 85px;
+  }
+  .nosotros .titulo-servicios {
+    text-align: center;
+    padding-left: 35px;
+    padding-bottom: 0px;
+    padding-top: 50px;
+  }
+  /*servicios*/
+  .servicios {
+    height: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #1f1e1e;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .servicios .clouds {
+    height: 250px;
+    width: 350px;
+    background-position: center;
+  }
+  .servicios .back {
+    height: 250px;
+    width: 350px;
+    background-position: center;
+  }
+  .servicios .ux {
+    height: 250px;
+    width: 350px;
+    background-position: center;
+  }
+  .servicios .graphics {
+    height: 250px;
+    width: 350px;
+    background-position: center;
+  }
+  /*grupos*/
+  .grupos {
+    height: 1100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .grupos .texto-grupos {
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    text-align: center;
+  }
+  /*footer*/
+  footer {
+    padding-left: 200px;
+  }
+}
+
+/* Tablets y phablets */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /*header*/
+  header p {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  /*nosotros*/
+  .nosotros {
+    height: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nosotros .texto-nosotros {
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    text-align: center;
+  }
+  .nosotros .imagen-nosotros {
+    padding: 70px;
+    padding-top: 85px;
+  }
+  .nosotros .titulo-servicios {
+    text-align: center;
+    padding-left: 35px;
+    padding-bottom: 0px;
+    padding-top: 50px;
+  }
+  /*servicios*/
+  .servicios {
+    height: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #1f1e1e;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .servicios .clouds {
+    height: 250px;
+    width: 350px;
+    background-position: center;
+  }
+  .servicios .back {
+    height: 250px;
+    width: 350px;
+    background-position: center;
+  }
+  .servicios .ux {
+    height: 250px;
+    width: 350px;
+    background-position: center;
+  }
+  .servicios .graphics {
+    height: 250px;
+    width: 350px;
+    background-position: center;
+  }
+  /*grupos*/
+  .grupos {
+    height: 1100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .grupos .texto-grupos {
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    text-align: center;
+  }
+  /*footer*/
+  footer {
+    padding-left: 100px;
+  }
+}
+
+/*Celulares*/
+@media only screen and (max-width: 575px) {
+  /*header*/
+  header p {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  /*nosotros*/
+  .nosotros {
+    height: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nosotros .texto-nosotros {
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    text-align: center;
+  }
+  .nosotros .imagen-nosotros {
+    padding: 70px;
+    padding-top: 85px;
+  }
+  .nosotros .titulo-servicios {
+    text-align: center;
+    padding-left: 35px;
+    padding-bottom: 0px;
+    padding-top: 50px;
+  }
+  /*servicios*/
+  .servicios {
+    height: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #1f1e1e;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .servicios .clouds {
+    height: 250px;
+    width: 350px;
+    background-position: center;
+  }
+  .servicios .back {
+    height: 250px;
+    width: 350px;
+    background-position: center;
+  }
+  .servicios .ux {
+    height: 250px;
+    width: 350px;
+    background-position: center;
+  }
+  .servicios .graphics {
+    height: 250px;
+    width: 350px;
+    background-position: center;
+  }
+  /*grupos*/
+  .grupos {
+    height: 900px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .grupos .texto-grupos {
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    text-align: center;
+  }
+  .grupos .texto-grupos .imagen-grupos {
+    padding-top: 5px;
+  }
+  /*footer*/
+  footer {
+    padding-left: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

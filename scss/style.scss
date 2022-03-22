@@ -1,8 +1,7 @@
 /******Variables*****/
-$rosa: #F1524F;
+$verdeazul: #385f6b;
 $blanco: white;
-$blancotrans: rgba(255, 255, 255, 0.377);
-$negro: black;
+$colorfondo: #1f1e1e;
 $tipografia:'Montserrat', sans-serif;
 $tipografia-texto: 'Quicksand', sans-serif;
 $verde: #219315;
@@ -77,15 +76,15 @@ header {
     }
     .boton1 {
             background-color:$blanco;
-            color: #385f6b;
+            color: $verdeazul;
             background-size: cover;
             padding: 0.5em;
             border-radius: 0.5em;
-            box-shadow: 3px 3px 15px #333333;
+            box-shadow: 3px 3px 15px, $colorfondo;
             transition: ease-in-out .3s;
             
             &:hover {
-                background-color: #385f6b;
+                background-color: $verdeazul;
                 color: white;
             }
 
@@ -97,7 +96,7 @@ header {
 //.........Nosotros.........//
  
 .nosotros {
-    background-color: #1f1e1e;
+    background-color: $colorfondo;
     height: 760px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -173,7 +172,7 @@ header {
 
 //..........Grupos..........//
 .grupos {
-        background-color: #1f1e1e;
+        background-color: $colorfondo;
         height: 650px;
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -197,8 +196,8 @@ header {
 //..........Contacto.......//
 
 .contacto {
-    background-color:#385f6b ;
-    color: white;
+    background-color:$verdeazul ;
+    color: $blanco;
     padding: 100px;
     .contacto-titulo {
         text-align: center; 
@@ -207,12 +206,49 @@ header {
   
 }
 
+//.......Footer.......//
+
+footer {
+    background-color: $colorfondo;
+    padding-left: 500px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .iconos {
+        
+        padding-bottom: 20px;
+        padding-left: 110px;
+        color: white;
+        width: 300px;  
+        display: flex;
+        flex-direction: row;
+        }
+     .icono-wpp {
+      padding-left: 30px;
+      &:hover {
+        color: $verdeazul;
+     }
+    }
+     .icono-linkedin {
+      padding-left: 30px;
+      &:hover {
+      color: $verdeazul;
+     }
+    }
+     .icono-instagram {
+      padding-left: 30px;
+      &:hover {
+      color: $verdeazul;
+     }
+    }
+    .copyright {
+        color: $blanco;
+    }
+}
+
 //.......Media queries.....//
 
-/* Escritorio pequeño / tablet */
-
-@media only screen and (min-width: 768px) and (max-width: 991px){
-
+/*Desktop*/
+@media only screen and (min-width: 992px) and (max-width: 1075px){
     /*nosotros*/
     .nosotros {
 
@@ -231,9 +267,9 @@ header {
         .imagen-nosotros {
             padding: 70px;
             padding-top: 85px;
+            padding-left: 200px;
         }
         .titulo-servicios {
-            color: white;
             text-align: center;
             padding-left: 35px;
             padding-bottom: 0px;
@@ -245,7 +281,7 @@ header {
         height: 1000px;
         display: flex;
         flex-direction: column;
-        background-color: #1f1e1e;
+        background-color: $colorfondo;
         align-items: center;
         .clouds {
             height: 250px;
@@ -285,5 +321,270 @@ header {
 }
 }
     /*footer*/
+    footer {
+        padding-left: 400px;
+        
+}
+}
+/* Escritorio pequeño / tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    /*nosotros*/
+    .nosotros {
+
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        
+        .texto-nosotros {
+            padding-top: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            color: $blanco;
+            text-align: center;
+            
+        }
+        .imagen-nosotros {
+            padding: 70px;
+            padding-top: 85px;
+        }
+        .titulo-servicios {
+            text-align: center;
+            padding-left: 35px;
+            padding-bottom: 0px;
+            padding-top: 50px;
+        }
+     }
+    /*servicios*/
+    .servicios {
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        background-color: $colorfondo;
+        align-items: center;
+        .clouds {
+            height: 250px;
+            width: 350px;
+            background-position: center;
+        }
+        .back {
+            height: 250px;
+            width: 350px;
+            background-position: center;
+        }
+        .ux{
+            height: 250px;
+            width: 350px;
+            background-position: center;
+        }
+        .graphics {
+            height: 250px;
+            width: 350px;
+            background-position: center;
+        }
+    
+    }
+    /*grupos*/
+    .grupos {
+        height: 1100px;
+        display: flex;
+        flex-direction: column;
+        
+        .texto-grupos {
+            padding-top: 100px;
+            padding-left: 30px;
+            padding-right: 30px;
+            color: $blanco;
+            text-align: center;
+          
+}
+}
+    /*footer*/
+    footer {
+        padding-left: 200px;
+        
+}
+}
+
+/* Tablets y phablets */
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    /*header*/
+    header {
+        p {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+      
+    }
+    /*nosotros*/
+    .nosotros {
+
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        
+        .texto-nosotros {
+            padding-top: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            color: $blanco;
+            text-align: center;
+            
+        }
+        .imagen-nosotros {
+            padding: 70px;
+            padding-top: 85px;
+        }
+        .titulo-servicios {
+            text-align: center;
+            padding-left: 35px;
+            padding-bottom: 0px;
+            padding-top: 50px;
+        }
+     }
+    /*servicios*/
+    .servicios {
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        background-color: $colorfondo;
+        align-items: center;
+        .clouds {
+            height: 250px;
+            width: 350px;
+            background-position: center;
+        }
+        .back {
+            height: 250px;
+            width: 350px;
+            background-position: center;
+        }
+        .ux{
+            height: 250px;
+            width: 350px;
+            background-position: center;
+        }
+        .graphics {
+            height: 250px;
+            width: 350px;
+            background-position: center;
+        }
+    
+    }
+    /*grupos*/
+    .grupos {
+        height: 1100px;
+        display: flex;
+        flex-direction: column;
+        
+        .texto-grupos {
+            padding-top: 100px;
+            padding-left: 30px;
+            padding-right: 30px;
+            color: $blanco;
+            text-align: center;
+          
+}
+}
+    /*footer*/
+    footer {
+        padding-left: 100px;
+        
+}
+}
+
+/*Celulares*/
+
+@media only screen and (max-width: 575px){
+  /*header*/
+  header {
+    p {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+  
+}
+/*nosotros*/
+.nosotros {
+
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    
+    .texto-nosotros {
+        padding-top: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        color: $blanco;
+        text-align: center;
+        
+    }
+    .imagen-nosotros {
+        padding: 70px;
+        padding-top: 85px;
+    }
+    .titulo-servicios {
+        text-align: center;
+        padding-left: 35px;
+        padding-bottom: 0px;
+        padding-top: 50px;
+    }
+ }
+/*servicios*/
+.servicios {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    background-color: $colorfondo;
+    align-items: center;
+    .clouds {
+        height: 250px;
+        width: 350px;
+        background-position: center;
+    }
+    .back {
+        height: 250px;
+        width: 350px;
+        background-position: center;
+    }
+    .ux{
+        height: 250px;
+        width: 350px;
+        background-position: center;
+    }
+    .graphics {
+        height: 250px;
+        width: 350px;
+        background-position: center;
+    }
+
+}
+/*grupos*/
+.grupos {
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    
+    .texto-grupos {
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: $blanco;
+        text-align: center;
+
+        .imagen-grupos {
+            padding-top: 5px;
+        }
+      
+}
+}
+/*footer*/
+footer {
+    padding-left: 15px;
     
 }
+}
+
+

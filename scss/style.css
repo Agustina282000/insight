@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /******Variables*****/
-/* Agregar map y each */
+/****Mixing***/
 * {
   margin: 0;
   padding: 0;
@@ -24,13 +24,11 @@ a {
 }
 
 h3 {
-  font-size: 25pt;
   font-family: "Montserrat", sans-serif;
 }
 
 p {
-  font-family: "Quicksand", sans-serif;
-  font-size: 12pt;
+  font-family: "Raleway", sans-serif;
 }
 
 header {

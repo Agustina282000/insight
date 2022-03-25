@@ -2,18 +2,20 @@
 $verdeazul: #385f6b;
 $blanco: white;
 $colorfondo: #1f1e1e;
-$tipografia:'Montserrat', sans-serif;
-$tipografia-texto: 'Quicksand', sans-serif;
-$verde: #219315;
-$azulclaro: #3f729b;
+$tipografia:'Montserrat',
+sans-serif;
+$tipografia-texto: 'Raleway',
+sans-serif;
 
-/* Agregar map y each */
 
- @mixin padding($padding-top, $padding-bottom) {
+
+/****Mixing***/
+
+@mixin padding($padding-top, $padding-bottom) {
     padding-top: $padding-top;
     padding-bottom: $padding-bottom;
- };
- 
+}
+
 
 
 * {
@@ -28,7 +30,7 @@ $azulclaro: #3f729b;
     font-size: 40pt;
     color: $blanco;
     padding-top: 210px;
-    
+
 }
 
 a {
@@ -36,27 +38,30 @@ a {
     text-decoration: none;
     color: $blanco;
     font-size: 18px;
-   }
+}
 
 
 
 h3 {
-    font-size: 25pt;
-    font-family: $tipografia;
     
+    font-family: $tipografia;
+
 }
+
 p {
     font-family: $tipografia-texto;
-    font-size: 12pt;
+   
 }
 
 //........Header........//
 
 header {
     color: white;
-    h3{
+
+    h3 {
         text-align: center;
     }
+
     p {
         padding-top: 20px;
         padding-left: 200px;
@@ -64,105 +69,118 @@ header {
         padding-bottom: 20px;
         text-align: center;
     }
+
     .fondo-header {
-    
-       background-image: url(../imagenes/fondo-inicio.jpg);
-        height: 100%; 
+
+        background-image: url(../imagenes/fondo-inicio.jpg);
+        height: 100%;
         width: 100%;
         height: 650px;
         text-align: center;
         background-size: cover;
-        
+
     }
+
     .boton1 {
-            background-color:$blanco;
-            color: $verdeazul;
-            background-size: cover;
-            padding: 0.5em;
-            border-radius: 0.5em;
-            box-shadow: 3px 3px 15px, $colorfondo;
-            transition: ease-in-out .3s;
-            
-            &:hover {
-                background-color: $verdeazul;
-                color: white;
-            }
+        background-color: $blanco;
+        color: $verdeazul;
+        background-size: cover;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        box-shadow: 3px 3px 15px, $colorfondo;
+        transition: ease-in-out .3s;
+
+        &:hover {
+            background-color: $verdeazul;
+            color: white;
+        }
 
     }
 
-    }
-    
+}
+
 
 //.........Nosotros.........//
- 
+
 .nosotros {
     background-color: $colorfondo;
     height: 760px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    
+    grid-template-columns: repeat(2, 1fr);
+
     .texto-nosotros {
         padding-top: 100px;
         padding-left: 30px;
         padding-right: 70px;
         color: $blanco;
+
         .parrafo-sobrenos {
             @include padding (2em, 0.5em);
         }
     }
+
     .imagen-nosotros {
         padding: 70px;
         padding-top: 85px;
     }
+
     .titulo-servicios {
         color: white;
         padding-left: 600px;
         padding-bottom: 30px;
     }
- }
+}
 
 //.........Servicios.......// 
 
 .servicios {
     display: flex;
-    grid-template-columns: repeat (4,1fr);
+    grid-template-columns: repeat (4, 1fr);
     padding: 0;
+
     .clouds {
         background-image: url(../imagenes/clouds.jpg);
         background-size: cover;
         height: 590px;
         width: 350px;
         transition: ease-in-out .3s;
+
         &:hover {
             background-image: url(../imagenes/cloudactive.jpg);
         }
     }
+
     .back {
         background-image: url(../imagenes/back.jpg);
         background-size: cover;
         height: 590px;
         width: 350px;
         transition: ease-in-out .3s;
+
         &:hover {
             background-image: url(../imagenes/backendactive.jpg);
         }
     }
-    .ux{
+
+    .ux {
         background-image: url(../imagenes/ux.jpg);
         background-size: cover;
         height: 590px;
         width: 350px;
         transition: ease-in-out .3s;
+
         &:hover {
             background-image: url(../imagenes/uxactive.jpg);
         }
     }
+
     .graphics {
         background-image: url(../imagenes/graphic.jpg);
         background-size: cover;
         height: 590px;
         width: 350px;
         transition: ease-in-out .3s;
+
         &:hover {
             background-image: url(../imagenes/graphicactive.jpg);
         }
@@ -172,38 +190,41 @@ header {
 
 //..........Grupos..........//
 .grupos {
-        background-color: $colorfondo;
-        height: 650px;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        
-        .texto-grupos {
-            padding-top: 180px;
-            padding-left: 30px;
-            padding-right: 70px;
-            color: $blanco;
-            text-align: right;
-            .parrafo-grupos {
-                @include padding (2em, 0.5em);
-            }
+    background-color: $colorfondo;
+    height: 650px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .texto-grupos {
+        padding-top: 180px;
+        padding-left: 30px;
+        padding-right: 70px;
+        color: $blanco;
+        text-align: right;
+
+        .parrafo-grupos {
+            @include padding (2em, 0.5em);
         }
-        .imagen-grupos {
-            padding: 70px;
-            padding-top: 85px;
-        }
+    }
+
+    .imagen-grupos {
+        padding: 70px;
+        padding-top: 85px;
+    }
 }
 
 //..........Contacto.......//
 
 .contacto {
-    background-color:$verdeazul ;
+    background-color: $verdeazul;
     color: $blanco;
     padding: 100px;
+
     .contacto-titulo {
-        text-align: center; 
-        margin-bottom: 1em; 
+        text-align: center;
+        margin-bottom: 1em;
     }
-  
+
 }
 
 //.......Footer.......//
@@ -213,33 +234,41 @@ footer {
     padding-left: 500px;
     padding-top: 30px;
     padding-bottom: 30px;
+
     .iconos {
-        
+
         padding-bottom: 20px;
         padding-left: 110px;
         color: white;
-        width: 300px;  
+        width: 300px;
         display: flex;
         flex-direction: row;
+    }
+
+    .icono-wpp {
+        padding-left: 30px;
+
+        &:hover {
+            color: $verdeazul;
         }
-     .icono-wpp {
-      padding-left: 30px;
-      &:hover {
-        color: $verdeazul;
-     }
     }
-     .icono-linkedin {
-      padding-left: 30px;
-      &:hover {
-      color: $verdeazul;
-     }
+
+    .icono-linkedin {
+        padding-left: 30px;
+
+        &:hover {
+            color: $verdeazul;
+        }
     }
-     .icono-instagram {
-      padding-left: 30px;
-      &:hover {
-      color: $verdeazul;
-     }
+
+    .icono-instagram {
+        padding-left: 30px;
+
+        &:hover {
+            color: $verdeazul;
+        }
     }
+
     .copyright {
         color: $blanco;
     }
@@ -248,34 +277,38 @@ footer {
 //.......Media queries.....//
 
 /*Desktop*/
-@media only screen and (min-width: 992px) and (max-width: 1075px){
+@media only screen and (min-width: 992px) and (max-width: 1075px) {
+
     /*nosotros*/
     .nosotros {
 
         height: 1300px;
         display: flex;
         flex-direction: column;
-        
+
         .texto-nosotros {
             padding-top: 20px;
             padding-left: 40px;
             padding-right: 40px;
             color: $blanco;
             text-align: center;
-            
+
         }
+
         .imagen-nosotros {
             padding: 70px;
             padding-top: 85px;
             padding-left: 200px;
         }
+
         .titulo-servicios {
             text-align: center;
             padding-left: 35px;
             padding-bottom: 0px;
             padding-top: 50px;
         }
-     }
+    }
+
     /*servicios*/
     .servicios {
         height: 1000px;
@@ -283,52 +316,59 @@ footer {
         flex-direction: column;
         background-color: $colorfondo;
         align-items: center;
+
         .clouds {
             height: 250px;
             width: 350px;
             background-position: center;
         }
+
         .back {
             height: 250px;
             width: 350px;
             background-position: center;
         }
-        .ux{
+
+        .ux {
             height: 250px;
             width: 350px;
             background-position: center;
         }
+
         .graphics {
             height: 250px;
             width: 350px;
             background-position: center;
         }
-    
+
     }
+
     /*grupos*/
     .grupos {
         height: 1100px;
         display: flex;
         flex-direction: column;
-        
+
         .texto-grupos {
             padding-top: 100px;
             padding-left: 30px;
             padding-right: 30px;
             color: $blanco;
             text-align: center;
-          
-}
-}
+
+        }
+    }
+
     /*footer*/
     footer {
         padding-left: 400px;
-        
+
+    }
 }
-}
+
 /* Escritorio pequeño / tablet */
 
-@media only screen and (min-width: 768px) and (max-width: 991px){
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 
     /*nosotros*/
     .nosotros {
@@ -336,26 +376,29 @@ footer {
         height: 1300px;
         display: flex;
         flex-direction: column;
-        
+
         .texto-nosotros {
             padding-top: 20px;
             padding-left: 40px;
             padding-right: 40px;
             color: $blanco;
             text-align: center;
-            
+
         }
+
         .imagen-nosotros {
             padding: 70px;
             padding-top: 85px;
         }
+
         .titulo-servicios {
             text-align: center;
             padding-left: 35px;
             padding-bottom: 0px;
             padding-top: 50px;
         }
-     }
+    }
+
     /*servicios*/
     .servicios {
         height: 1000px;
@@ -363,87 +406,98 @@ footer {
         flex-direction: column;
         background-color: $colorfondo;
         align-items: center;
+
         .clouds {
             height: 250px;
             width: 350px;
             background-position: center;
         }
+
         .back {
             height: 250px;
             width: 350px;
             background-position: center;
         }
-        .ux{
+
+        .ux {
             height: 250px;
             width: 350px;
             background-position: center;
         }
+
         .graphics {
             height: 250px;
             width: 350px;
             background-position: center;
         }
-    
+
     }
+
     /*grupos*/
     .grupos {
         height: 1100px;
         display: flex;
         flex-direction: column;
-        
+
         .texto-grupos {
             padding-top: 100px;
             padding-left: 30px;
             padding-right: 30px;
             color: $blanco;
             text-align: center;
-          
-}
-}
+
+        }
+    }
+
     /*footer*/
     footer {
         padding-left: 200px;
-        
-}
+
+    }
 }
 
 /* Tablets y phablets */
 
-@media only screen and (min-width: 576px) and (max-width: 767px){
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
     /*header*/
     header {
         p {
             padding-left: 100px;
             padding-right: 100px;
         }
-      
+
     }
+
     /*nosotros*/
     .nosotros {
 
         height: 1200px;
         display: flex;
         flex-direction: column;
-        
+
         .texto-nosotros {
             padding-top: 10px;
             padding-left: 40px;
             padding-right: 40px;
             color: $blanco;
             text-align: center;
-            
+
         }
+
         .imagen-nosotros {
             padding: 70px;
             padding-top: 85px;
         }
+
         .titulo-servicios {
             text-align: center;
             padding-left: 35px;
             padding-bottom: 0px;
             padding-top: 50px;
         }
-     }
+    }
+
     /*servicios*/
     .servicios {
         height: 1000px;
@@ -451,140 +505,155 @@ footer {
         flex-direction: column;
         background-color: $colorfondo;
         align-items: center;
+
         .clouds {
             height: 250px;
             width: 350px;
             background-position: center;
         }
+
         .back {
             height: 250px;
             width: 350px;
             background-position: center;
         }
-        .ux{
+
+        .ux {
             height: 250px;
             width: 350px;
             background-position: center;
         }
+
         .graphics {
             height: 250px;
             width: 350px;
             background-position: center;
         }
-    
+
     }
+
     /*grupos*/
     .grupos {
         height: 1100px;
         display: flex;
         flex-direction: column;
-        
+
         .texto-grupos {
             padding-top: 100px;
             padding-left: 30px;
             padding-right: 30px;
             color: $blanco;
             text-align: center;
-          
-}
-}
+
+        }
+    }
+
     /*footer*/
     footer {
         padding-left: 100px;
-        
-}
+
+    }
 }
 
 /*Celulares*/
 
-@media only screen and (max-width: 575px){
-  /*header*/
-  header {
-    p {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-  
-}
-/*nosotros*/
-.nosotros {
+@media only screen and (max-width: 575px) {
 
-    height: 1200px;
-    display: flex;
-    flex-direction: column;
-    
-    .texto-nosotros {
-        padding-top: 10px;
-        padding-left: 40px;
-        padding-right: 40px;
-        color: $blanco;
-        text-align: center;
-        
-    }
-    .imagen-nosotros {
-        padding: 70px;
-        padding-top: 85px;
-    }
-    .titulo-servicios {
-        text-align: center;
-        padding-left: 35px;
-        padding-bottom: 0px;
-        padding-top: 50px;
-    }
- }
-/*servicios*/
-.servicios {
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-    background-color: $colorfondo;
-    align-items: center;
-    .clouds {
-        height: 250px;
-        width: 350px;
-        background-position: center;
-    }
-    .back {
-        height: 250px;
-        width: 350px;
-        background-position: center;
-    }
-    .ux{
-        height: 250px;
-        width: 350px;
-        background-position: center;
-    }
-    .graphics {
-        height: 250px;
-        width: 350px;
-        background-position: center;
-    }
-
-}
-/*grupos*/
-.grupos {
-    height: 900px;
-    display: flex;
-    flex-direction: column;
-    
-    .texto-grupos {
-        padding-top: 50px;
-        padding-left: 30px;
-        padding-right: 30px;
-        color: $blanco;
-        text-align: center;
-
-        .imagen-grupos {
-            padding-top: 5px;
+    /*header*/
+    header {
+        p {
+            padding-left: 50px;
+            padding-right: 50px;
         }
-      
-}
-}
-/*footer*/
-footer {
-    padding-left: 15px;
-    
-}
-}
 
+    }
 
+    /*nosotros*/
+    .nosotros {
+
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+
+        .texto-nosotros {
+            padding-top: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            color: $blanco;
+            text-align: center;
+
+        }
+
+        .imagen-nosotros {
+            padding: 70px;
+            padding-top: 85px;
+        }
+
+        .titulo-servicios {
+            text-align: center;
+            padding-left: 35px;
+            padding-bottom: 0px;
+            padding-top: 50px;
+        }
+    }
+
+    /*servicios*/
+    .servicios {
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        background-color: $colorfondo;
+        align-items: center;
+
+        .clouds {
+            height: 250px;
+            width: 350px;
+            background-position: center;
+        }
+
+        .back {
+            height: 250px;
+            width: 350px;
+            background-position: center;
+        }
+
+        .ux {
+            height: 250px;
+            width: 350px;
+            background-position: center;
+        }
+
+        .graphics {
+            height: 250px;
+            width: 350px;
+            background-position: center;
+        }
+
+    }
+
+    /*grupos*/
+    .grupos {
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+
+        .texto-grupos {
+            padding-top: 50px;
+            padding-left: 30px;
+            padding-right: 30px;
+            color: $blanco;
+            text-align: center;
+
+            .imagen-grupos {
+                padding-top: 5px;
+            }
+
+        }
+    }
+
+    /*footer*/
+    footer {
+        padding-left: 15px;
+
+    }
+}
